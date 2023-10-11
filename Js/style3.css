@@ -1,0 +1,25 @@
+/* #mydiv {
+  background-color: lightblue;
+  width: 100px;
+  height: 100px;
+} */
+
+/* #innerdiv {
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+}
+#outerdiv {
+  background-color: lightgreen;
+  width: 200px;
+  height: 200px;
+} */
+
+#mydiv {
+  background-color: orangered;
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  position: relative;
+}
