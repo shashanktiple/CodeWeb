@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Practice</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+  </head>
+
+  <body>
+    <!-- jQuery -->
+    <script
+      src="http://code.jquery.com/jquery-3.1.0.min.js"
+      integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JavaScript -->
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script> -->
+
+    <script>
+      $(Document).ready(function () {
+        $("#but1").click(function () {
+          alert("Alert: " + $("p").text());
+        });
+      });
+    </script>
+
+    <script>
+      $(Document).ready(function () {
+        $("#but").click(function () {
+          var v = $("#prac2");
+          v.animate({ height: "400px", width: "100px" }, "slow");
+          v.animate({ height: "400px", width: "400px" }, "slow");
+          v.animate({ height: "100px", width: "400px" }, "slow");
+          v.animate({ height: "100px", width: "100px" }, "slow");
+        });
+      });
+    </script>
+
+    <div id="prac1">
+      <div>
+        <p>THIS IS A ALERT MESSAGE----</p>
+      </div>
+
+      <div>
+        <p>Name: <input type="text" name="first" id="inp" /></p>
+      </div>
+
+      <div><button id="but1">Click</button></div>
+      <br />
+    </div>
+
+    <div
+      id="prac2"
+      style="
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+      "
+    >
+      TIPLE
+      <button id="but">CLICK HERE</button>
+    </div>
+  </body>
+</html>
