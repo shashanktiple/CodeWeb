@@ -1,7 +1,6 @@
-const apikey = "d29033ec1be83a0d6e2372c6f9e7ac62";
+const apikey = "";
 const apiurl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-//https://api.openweathermap.org/data/2.5/weather?q=london&appid=d29033ec1be83a0d6e2372c6f9e7ac62&units=metric
 
 const searchbox = document.querySelector(".search input");
 const searchbtn = document.querySelector(".search button");
