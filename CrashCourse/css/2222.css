@@ -1,0 +1,106 @@
+/* body > * {
+  border: 5px solid rgb(47, 109, 126);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "heading heading heading"
+    "main aside navigation"
+    "footer footer footer";
+  padding: 1em;
+  gap: 5px;
+}
+header {
+  grid-area: heading;
+}
+
+nav {
+  grid-area: navigation;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 800px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-areas:
+      "heading "
+      "navigation"
+      "main"
+      "aside"
+      "footer";
+  }
+} */
+
+/* To hide a content in small screen */
+/* @media (max-width: 600px) {
+  aside {
+    display: none;
+  }
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr1fr;
+    grid-template-areas:
+      "heading "
+      "navigation"
+      "main"
+      "footer";
+  }
+} */
+/* ----------------------- */
+/* 
+div {
+  width: 15%;
+  height: 6em;
+  background-color: lightblue;
+  border-radius: 15px;
+  margin: 4em;
+  padding: 12px; */
+/* transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 1s; */
+/* transition: width 1s ease 1s, transform 1s ease 0s;
+}
+div:hover {
+  width: 50%;
+  transform: rotate(180deg);
+} */
+/* ----------------------- */
+
+:root {
+  --main-color: #00334c;
+  --flex-gap: 12px;
+}
+
+h1 {
+  color: var(--main-color);
+}
+h2 {
+  padding: 12px;
+  color: white;
+}
+
+main {
+  display: flex;
+  border: 5px solid black;
+  gap: var(--flex-gap);
+  width: 412px;
+}
+section {
+  flex-basis: 200px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: var(--main-color);
+}

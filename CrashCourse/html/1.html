@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shashank Tiple" />
+    <meta name="description" content="Practice page" />
+    <link rel="icon" href="happy.png" />
+    <base href="http://127.0.0.1:3000/Aria.html" />
+    <title>1</title>
+
+    <link rel="stylesheet" href="1.css" />
+  </head>
+
+  <body>
+    <table>
+      <caption>
+        <u>Budget Table</u>
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Items</th>
+          <th scope="col">Prices</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">veggie</th>
+          <td>onion</td>
+          <td>$23</td>
+        </tr>
+        <tr>
+          <th scope="row">fruit</th>
+          <td>potato</td>
+          <td>$30</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>-------------------------------------</h1>
+
+    <form action="">
+      <label for="username">UserName: </label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="UserName"
+        required
+      /><br />
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="6"
+        required
+      /><br />
+
+      <fieldset>
+        <legend>Animals</legend>
+        <label for="dog">Dog</label>
+        <input type="radio" name="animal" id="dog" value="dog" />
+        <label for="cat">Cat</label>
+        <input type="radio" name="animal" id="cat" value="cat" />
+        <label for="horse">horse</label>
+        <input type="radio" name="animal" id="horse" value="horse" /><br />
+      </fieldset>
+
+      <button id="button">Submit</button>
+    </form>
+  </body>
+</html>
